@@ -1,0 +1,52 @@
+% 导言区
+\documentclass{ctexart}
+
+% \usepackage{ctex}
+
+% 文稿区（正文区）
+
+\begin{document}
+	\begin{tabular}{l|c|c|c|r|} % 左对齐、居中对齐、居中对齐、居中对齐、右对齐
+		% 注，tabular里的空格不起作用
+		姓名 & 语文 & 数学 & 英语 & 化学 \\
+		张三 & 100 & 99 & 80 & 77 \\
+		李四 & 78 & 80 & 80 & 99 \\
+		王五 & 90 & 78 & 90 & 95 \\
+	\end{tabular}
+
+	\begin{tabular}{l|c|c|c|r|} % 左对齐、居中对齐、居中对齐、居中对齐、右对齐
+		\hline % 表格横线
+		姓名 & 语文 & 数学 & 英语 & 化学 \\
+		\hline \hline
+		张三 & 100 & 99 & 80 & 77 \\
+		\hline
+		李四 & 78 & 80 & 80 & 99 \\
+		\hline
+		王五 & 90 & 78 & 90 & 95 \\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|l||c|c|c|r|} % 左对齐、居中对齐、居中对齐、居中对齐、右对齐
+		\hline % 表格横线
+		姓名 & 语文 & 数学 & 英语 & 化学 \\
+		\hline \hline
+		张三 & 100 & 99 & 80 & 77 \\
+		\hline
+		李四 & 78 & 80 & 80 & 99 \\
+		\hline
+		王五 & 90 & 78 & 90 & 95 \\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|l||c|c|c|r|p{2cm}|} % p - 指定宽度，当内容超过宽度时会自动换行
+		\hline % 表格横线
+		姓名 & 语文 & 数学 & 英语 & 化学 \\
+		\hline \hline
+		张三 & 100 & 99 & 80 & 7711111中华人民共和国 \\
+		\hline
+		李四 & 78 & 80 & 80 & 99 \\
+		\hline
+		王五 & 90 & 78 & 90 & 95 \\
+		\hline
+	\end{tabular}
+\end{document}

@@ -1,0 +1,33 @@
+% 导言区(全局设置)
+\documentclass{ctexart} %book, report, letter
+%\usepackage{ctex}
+\newcommand\degree{^\circ}
+
+\title{\heiti 我的第一个文档}
+\author{\kaishu 薛文}
+\date{\today}
+
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	
+	1954年12月，《关于重点高等学校和专家工作范围的决议》出台，有6所大学被指定为全国重点性大学，分别是清华大学、北京大学、哈尔滨工业大学、中国人民大学、北京农业大学和北京医学院。
+	
+	
+	你好， \LaTeX 。
+	
+	Hello, world!
+	
+	% here is a formula	
+	Let $f(x)$ be defined by the formula
+	
+	$$f(x)=3x^2+x-1$$ which is a polynomial of degree 2.
+	
+	可以用符号语言表述为：设直角三角形 $ABC$，其中 $\angle C=90\degree$，则有：
+	%用于产生带编号的行间公式
+	\begin{equation}
+		AB^2 = BC^2 + AC^2
+	\end{equation}
+
+\end{document}

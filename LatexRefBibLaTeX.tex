@@ -1,0 +1,44 @@
+% 导言区
+\documentclass{ctexart}
+
+% \usepackage{ctex}
+% biblatex/biber
+% 新的TEX参考文献排版引擎
+% 样式文件（参考样式文件--bbx文件，引用样式文件--cbx文件）使用latex编写
+% 支持根据本地化排版，如：
+% 	biber -l zh__pinyin texfile，用于指定按拼音排序
+%	biber -l zh_stroke texfile，用于按笔画排序
+% 使用时，需要将[Build] → Default Bibilography Tool → Biber
+
+%\usepackage[style=numeric,backend=biber]{biblatex}
+
+%\usepackage[style=caspervector,backend=biber,utf8]{biblatex} % 使用比较优秀的caspervector样式，可从github上下载，默认是中英文混排
+%\addbibresource{cnki2.bib} % 此处不能省略文件后缀，注，这个命令不能在{}中使用“,”来引用多个bib库文件
+
+\usepackage[style=caspervector,backend=biber,utf8,sorting=cenyt]{biblatex} % c：中文、e：英文、n：作者姓名、t：文献标题、y：出版年份
+%% 注意要排版两次产生正确的索引编号
+\addbibresource{cnki2.bib} % 此处不能省略文件后缀，注，这个命令不能在{}中使用“,”来引用多个bib库文件
+
+% 文稿区（正文区）
+\begin{document}
+	% 一次管理，多次引用
+	无格式化引用\cite{__2020}
+	
+	带方括号的引用\parencite{_eomsoq4-n_2013}
+	
+	上标引用\supercite{_ti_3c_2_2020}
+	
+%	\printbibliography % 输出参考文件列表，默认title为英文Reference
+	\nocite{*}
+	\printbibliography[title={参考文献}]
+	
+	% 同样可以采用bat批处理文件实现编译
+%	xelatex latexRefBibLaTeX
+%	biber -l zh__pinyin latexRefBibLaTeX
+%	xelatex latexRefBibLaTeX
+%	xelatex latexRefBibLaTeX
+%	del *.aux *.bbl *.bcf *.blg *.log *.xml
+	
+	
+	
+\end{document}

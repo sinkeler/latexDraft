@@ -1,0 +1,78 @@
+% 导言区
+\documentclass{ctexart}
+
+% \usepackage{ctex}
+
+% 导言区：\usepackage{graphicx}
+% 语  法：\includegraphics[< 选项 >]{< 文件名 >}
+% 格  式：EPS,PDF,PNG,JPEG,BMP
+\usepackage{graphicx}
+\graphicspath{{figures/},{pics/}} % 图片在当前目录下的figures目录里
+
+% 正文区（文稿区）
+\begin{document}
+	
+%	\includegraphics[scale=0.2]{city}
+%	
+%	在\LaTeX{}中的表格
+%	\begin{tabular}{|l|c|c|c|r|} 
+%		\hline
+%		姓名 & 语文 & 数学 & 英语 & 化学 \\
+%		\hline \hline
+%		张三 & 100 & 99 & 80 & 77 \\
+%		\hline
+%		李四 & 78 & 80 & 80 & 99 \\
+%		\hline
+%		王五 & 90 & 78 & 90 & 95 \\
+%		\hline
+%	\end{tabular}
+
+%	在\LaTeX{}中的插图
+%	\begin{figure}[htbp] % 可选参数，浮动提的排版位置
+%		\centering % 居中排版
+%		\includegraphics[scale=0.2]{city}
+%		\caption{\TeX 系统概况---东京} % 该插图被自动编号
+%	\end{figure}
+%
+%	在\LaTeX{}中的表格
+%	\begin{table}
+%		\centering
+%		\caption{\TeX 考试成绩单} % 该插图被自动编号
+%		\begin{tabular}{|l|c|c|c|r|} 
+%			\hline
+%			姓名 & 语文 & 数学 & 英语 & 化学 \\
+%			\hline \hline
+%			张三 & 100 & 99 & 80 & 77 \\
+%			\hline
+%			李四 & 78 & 80 & 80 & 99 \\
+%			\hline
+%			王五 & 90 & 78 & 90 & 95 \\
+%			\hline
+%		\end{tabular}
+%	\end{table}
+	
+	在\LaTeX{}中的插图，\TeX 系统概况---东京见图\ref{fig-city}：
+	\begin{figure}[htbp]
+		\centering % 居中排版
+		\includegraphics[scale=0.2]{city}
+		\caption{\TeX 系统概况---东京} \label{fig-city} % 建一个label，为了上面的ref引用，实现交叉引用
+	\end{figure}
+	
+	在\LaTeX{}中也可以使用表\ref{tab-score}所示的表格：
+	\begin{table}[htbp]
+		\centering
+		\caption{\TeX 考试成绩单} \label{tab-score}
+		\begin{tabular}{|l|c|c|c|r|} 
+			\hline
+			姓名 & 语文 & 数学 & 英语 & 化学 \\
+			\hline \hline
+			张三 & 100 & 99 & 80 & 77 \\
+			\hline
+			李四 & 78 & 80 & 80 & 99 \\
+			\hline
+			王五 & 90 & 78 & 90 & 95 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+\end{document}

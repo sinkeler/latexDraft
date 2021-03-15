@@ -1,0 +1,60 @@
+% 导言区
+\documentclass{ctexart}
+
+% \usepackage{ctex}
+
+% 导言区：\usepackage{graphicx}
+% 语  法：\includegraphics[< 选项 >]{< 文件名 >}
+% 格  式：EPS,PDF,PNG,JPEG,BMP
+\usepackage{graphicx}
+\graphicspath{{figures/},{pics/}} % 图片在当前目录下的figures目录里
+
+% 正文区（文稿区）
+\begin{document}
+	\LaTeX{}中的插图
+	
+	\includegraphics{city}
+	\includegraphics{boeing}
+	\includegraphics{TheRoadAhead.jpg} % 注：一般不建议文件名中有空格，若有空格，则需要对字符进行处理，较为繁琐，同时，文件名后缀可加可不加
+	
+	\includegraphics[width=2cm]{city}
+	\includegraphics[width=2cm]{boeing}
+	\includegraphics[width=2cm]{TheRoadAhead.jpg}
+	
+	\includegraphics[width=5cm]{city}
+	
+	\includegraphics[width=5cm]{boeing}
+	
+	\includegraphics[width=5cm]{TheRoadAhead.jpg}
+	
+	\includegraphics[height=5cm]{city}
+	
+	\includegraphics[height=5cm]{boeing}
+	
+	\includegraphics[height=5cm]{TheRoadAhead.jpg}
+	
+	\includegraphics[scale=0.3]{city}
+	
+	\includegraphics[scale=0.3]{boeing}
+	
+	\includegraphics[scale=0.3]{TheRoadAhead.jpg}
+	
+	\includegraphics[height=0.1\textheight]{city}
+	
+	\includegraphics[height=0.1\textheight]{boeing}
+	
+	\includegraphics[height=0.1\textheight]{TheRoadAhead.jpg}
+	
+	\includegraphics[width=0.5\textwidth]{city}
+	
+	\includegraphics[width=0.5\textwidth]{boeing}
+	
+	\includegraphics[width=0.5\textwidth]{TheRoadAhead.jpg}
+	
+	\includegraphics[angle=-45,width=0.3\textwidth]{city}
+	
+	\includegraphics[angle=-45,width=0.3\textwidth]{boeing}
+	
+	\includegraphics[angle=-45,width=0.3\textwidth]{TheRoadAhead.jpg}
+	
+\end{document}

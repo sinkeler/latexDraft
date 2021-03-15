@@ -1,0 +1,81 @@
+% 导言区
+%\documentclass{article} %ctexbook, ctexrep
+
+% \documentclass{ctexart}
+
+\documentclass{ctexbook}
+
+
+
+
+%\usepackage{ctex}
+
+% ============= 设置标题的格式 ==========
+% 注：latex代码不像编程语言，行与行之间不能有空行
+\ctexset{
+	section = {
+		format+ = \zihao{-4} \heiti \raggedright,
+		name = {,、},
+		number = \chinese{section},
+		beforeskip = 1.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt}
+	},
+	subsection = {
+		format+ = \zihao{5} \heiti \raggedright,
+		% name={\thesubsection、},
+		name = {,、},
+		number = \arabic{subsection},
+		beforeskip = 1.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt}
+	}
+}
+
+\begin{document}
+%	\section{引言}
+%	中国人口模式的转变发生于民国时期 关于民国的进步,我只讲两个过去人们比较忽略的问题。	一是人口模式。如前所述,传统时代人口的增减是王朝兴衰的显示器。
+%	
+%	中国人口模式的转变发生于民国时期 关于民国的进步,我只讲两个过去人们比较忽略的问题。	一是人口模式。如前所述,传统时代人口的增减是王朝兴衰的显示器。\par
+%	中国人口模式的转变发生于民国时期 关于民国的进步,我只讲两个过去人们比较忽略的问题。	
+%	\section{实验方法}
+%	\section{实验结果}
+%	\subsection{数据}
+%	\subsection{图标}
+%	\subsubsection{实验条件}
+%	\subsubsection{实验过程}
+%	\section{结论}
+%	\section{致谢}
+	
+	
+	
+	
+	%生成整个 文档的目录
+	\tableofcontents
+	
+	\chapter{绪论} % 注意，需要讲documentclass更换为ctexbook
+	\section{研究目的和意义}
+	\section{国内外研究现状}
+	\subsection{国外研究现状}
+	\subsection{国内研究现状}
+	\section{研究内容}
+	\subsection{研究方法}
+	\subsection{技术路线}
+	
+	\chapter{实验与结果分析}
+	\section{引言}
+	\section{实验方法}
+	\section{实验结果}
+	\subsection{数据}
+	\subsection{图表}
+	\subsubsection{实验条件}
+	\subsubsection{实验过程}
+	\subsection{结果分析}
+	\section{结论}
+	\section{致谢}
+
+	
+		
+\end{document}
+
+% 正文区（文稿区）
